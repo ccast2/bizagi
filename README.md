@@ -4,6 +4,10 @@ Bizagi Test
 
 ### Instalacion
 ```sh
+git clone https://github.com/ccast2/bizagi.git
+```
+### Instalacion
+```sh
 bower install
 ```
 
