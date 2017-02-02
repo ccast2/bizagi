@@ -11,7 +11,7 @@
     "ccast2@gmail.com"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/ccast2/bizagi.git",
   "private": true,
   "ignore": [
     "**/.*",
@@ -25,7 +25,7 @@
     "angular": "^1.6.1",
     "angular-ui-router": "^0.4.2",
     "angular-bootstrap": "^2.5.0",
-    "bootstrap": "^3.3.7",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }
