@@ -1,0 +1,39 @@
+
+<div class="col-8 offset-2">
+	<form class="navbar-form search-movies" role="search" >
+		<div class="row">
+			
+		<input ng-model="keyword" type="text" class="form-control col-10" placeholder="Buscar" name="q">
+		<select class="form-control col-2"
+			ng-model="searchCriteria"
+			ng-options="type as type.label for type in searchKeys"
+			ng-init="searchCriteria = searchKeys[0]"
+		>
+		</select>
+		</div>
+	</form>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-4" ng-repeat="(key,movie) in Movies">
+
+			<div class="card" style="width: 20rem;">
+				<img class="card-img-top" ng-src="{{movie.Poster}}" alt="Card image cap">
+				<div class="card-block">
+					<h4 class="card-title">{{movie.Title}}</h4>
+					<h6 class="card-title">Genero:<small>{{movie.Genre}}</small></h6>
+					<h6 class="card-title">Año:<small>{{movie.Year}}</small></h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+	.search-movies {
+		padding: 22px;
+	}
+
+</style>
