@@ -36,7 +36,6 @@
 
     $scope.$watch('keyword',$scope.validateSearch);
     $scope.$watch('searchCriteria.key',function(newVal) {
-        console.log(newVal);
         $scope.validateSearch($scope.keyword);
     });
 
@@ -45,7 +44,6 @@
         $scope.Movies = [];
         angular.forEach($scope.MoviesDB, function(movie, key) {
             for(prop in movie){
-                console.log(prop);
                 if (prop == searchKey && movie[prop].toLowerCase().includes(keyword.toLowerCase())) {
                     $scope.Movies.push(movie);
                 }
